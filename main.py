@@ -26,7 +26,7 @@ async def get_llm_response(user_id: int, prompt: str) -> str:
 
     try:
         response = ollama.chat(
-            model='llama3.1:8b-q4_K_M',  # Укажи нужную модель
+            model='llama3.1:8bM',  # Укажи нужную модель
             messages=user_contexts[user_id]
         )
         bot_response = response['message']['content']
